@@ -368,44 +368,44 @@ section {
     justify-content: center;
   }
 
-  header h1{
+  header h1 {
     width: 100%;
     text-align: center;
   }
 
-  header nav ul{
+  header nav ul {
     margin-top: 20px;
     width: 100%;
     justify-content: center;
   }
 
-  header nav ul li a{
+  header nav ul li a {
     font-size: 20px;
   }
 
-  footer h2, footer div{
+  footer h2, footer div {
     text-align: center;
     width: 100%;
   }
 
-  .hero-cta, .hero-form{
+  .hero-cta, .hero-form {
     width: 100%;
   }
-
-  .hero-cta{
+  
+  .hero-cta {
     text-align: center;
   }
 
-  .section-title{
+  .section-title {
     width: 80%;
   }
-
-  .trainer{
+  
+  .trainer {
     flex: 0 70%;
   }
-
+  
   .contact-info iframe{
-    flex:1 100%;
+    flex: 1 100%;
   }
 }
 
@@ -464,7 +464,7 @@ section {
     flex: 0 100%;
   }
 
-  .contact-form{
+  .contact-form {
     order: 3;
   }
 }
