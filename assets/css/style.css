@@ -24,14 +24,14 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: -webkit-sticky;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
-  background-image: url('../images/hero-bg.jpg');
+  background-image: url("../images/hero-bg.jpg");
   background-size: cover;
-  background-position: 80%;
   background-attachment: fixed;
-  z-index:9999;
+  background-position: 80%;
+  z-index: 9999;
 }
 
 header h1 {
@@ -39,8 +39,7 @@ header h1 {
   margin: 0;
   font-size: 36px;
   color: var(--primary-color);
-  /* add alongside your existing declarations */
-  text-shadow: 0 0  10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -64,7 +63,7 @@ header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
-  text-shadow: 0 0  10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav ul li a:hover {
@@ -113,12 +112,12 @@ section {
 .hero {
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
-  background-position: 80%;
-  background-attachment: fixed;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 
 .hero-cta {
@@ -134,18 +133,22 @@ section {
   font-style: italic;
   font-size: 55px;
   color: var(--primary-color);
-  text-shadow: 0 0  10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-form {
   border: 3px solid var(--secondary-color);
-  border-radius: 15px;
-  background-color: rgba(252, 252, 56, 0.8);
+  background-color: rgba(255, 225, 56, 0.8);
   padding: 20px;
   color: var(--secondary-color);
   width: 40%;
   margin: 3.5%;
-  box-shadow: 0 0 10px rgba(0, 0, 0 , 0.5);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-form button:hover {
+  background-color: var(--tertiary-color);  
 }
 
 .hero-form h3 {
@@ -158,17 +161,16 @@ section {
 
 .form-input {
   border: 1px solid var(--secondary-color);
-  border-radius: 10px;
   display: block;
   padding: 7px 15px;
   font-size: 16px;
   color: var(--secondary-color);
   width: 100%;
-  margin-bottom: 15px;
-  background-color: rgba(252, 252, 255, 0.75);
+  margin-bottom: 15px; 
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.75);
 }
 
-/* create a new rule for focus state */
 .form-input:focus {
   background-color: rgba(255,255,255, 1);
   outline: none;
@@ -177,6 +179,15 @@ section {
 .hero-form label {
   margin: 0 5px;
 }
+
+.hero-form button {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+} 
 
 .checkbox-wrapper input, .radio-wrapper input {
   opacity: 0;
@@ -206,8 +217,8 @@ section {
 
 .radio-wrapper label::after {
   content: "";
-  width: 20px;
   height: 20px;
+  width: 20px;
   border-radius: 50%;
   background: var(--secondary-color);
   position: absolute;
@@ -237,19 +248,6 @@ section {
 .radio-wrapper input:checked + label::after {
   content: "";
 }
-
-.hero-form button {
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
-  border: none;
-  border-radius: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
-} 
-
-.hero-form button:hover {
-  background-color: var(--tertiary-color);  
-}
 /* HERO STYLES END */
 
 
@@ -274,7 +272,6 @@ section {
 /* SECTION TITLE STYLES END */
 
 /* WHAT WE DO STYLES */
-
 .intro p {
   line-height: 1.7;
   color: var(--tertiary-color);
@@ -295,15 +292,14 @@ section {
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  /* border-bottom: 1px solid var(--tertiary-color); */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-.step:not(:last-child) {
-  border-bottom: 1px solid var(--tertiary-color);
+.step:last-child {
+  border-bottom: none;
 }
 
 .step h3 {
@@ -342,7 +338,6 @@ section {
   line-height: 1.5;
   color: var(--secondary-color);
 }
-
 /* WHAT YOU DO STYLES END */
 
 /* MEET THE TRAINERS START */
@@ -427,7 +422,6 @@ section {
 
 .contact-form input, .contact-form textarea {
   border: 1px solid var(--secondary-color);
-  border-radius: 10px;
   display: block;
   padding: 7px 15px;
   font-size: 16px;
@@ -435,6 +429,7 @@ section {
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
+  border-radius: 10px;
   background-color: rgba(255,255,255, 0.75);
 }
 
@@ -446,12 +441,12 @@ section {
 .contact-form button {
   width: 100%;
   border: none;
-  border-radius: 10px;
   background: var(--primary-color);
   color: var(--secondary-color);
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+  border-radius: 10px;
 }
 
 .contact-form button:hover {
@@ -462,8 +457,6 @@ section {
 .contact-info a {
   color: var(--primary-color);
 }
-
-
 /* REACH OUT STYLES END */
 
 /* UTILITIES */
@@ -554,6 +547,10 @@ section {
 
   .step-text {
     flex: 100%;  
+  }
+
+  .trainer-bio h3, .trainer-bio h4 {
+    display: block;
   }
 }
 
