@@ -3,6 +3,8 @@
 ## Purpose
 A website that offers fitness training services. 
 
+![run-buddy](assets/images/vitokwolRun-Buddy.png)
+
 ## Built With
 * HTML
 * CSS
